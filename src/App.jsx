@@ -5,6 +5,7 @@ import ScreenCaptureStudio from './components/ScreenCaptureStudio';
 import KeyframeTimeline from './components/KeyframeTimeline';
 import MarkdownExportDeck from './components/MarkdownExportDeck';
 import CabModal from './components/CabModal';
+import OutcomeChart from './components/OutcomeChart';
 import Footer from './components/Footer';
 import { PRESET_WORKFLOWS, GENERATED_MARKDOWN_SAMPLE } from './data/mockSopData';
 
@@ -70,6 +71,11 @@ export default function App() {
           onJumpToStudio={scrollToStudio}
           onJumpToMarkdown={scrollToMarkdown}
         />
+
+        {/* Julien Bek $1:$6 Sequoia Framework + Bklit UI Outcome Engine */}
+        <section className="px-4 sm:px-6 lg:px-8">
+          <OutcomeChart onCtaClick={() => setIsCabOpen(true)} />
+        </section>
 
         {/* Screen Capture Studio */}
         <ScreenCaptureStudio

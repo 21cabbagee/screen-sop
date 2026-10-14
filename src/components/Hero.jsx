@@ -1,9 +1,11 @@
 import React from 'react';
 import { Video, Sparkles, ArrowRight, FileText, Zap, MousePointer, CheckCircle2, DollarSign } from 'lucide-react';
+import ParticlesCanvas from './ParticlesCanvas';
 
 export default function Hero({ onJumpToStudio, onJumpToMarkdown }) {
   return (
     <section className="relative pt-12 pb-8 overflow-hidden">
+      <ParticlesCanvas color="168, 85, 247" />
       {/* Background radial glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sop-600/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-indigo-600/15 rounded-full blur-2xl pointer-events-none" />
